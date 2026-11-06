@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>r星每日大赛寸止挑战-寸止挑战每日大赛_r星大赛热点爆料_吃瓜黑料合集</title>
+<meta name="description" content="r星每日大赛寸止挑战热点内容首页，汇集每日大赛寸止挑战的吃瓜爆料、黑料合集与网友热议，按日更新热点看点与讨论脉络，帮助你快速了解这一热门话题的来龙去脉。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312101c'/%3E%3Cpath d='M32 10l5.6 12.6L51 24.4l-10 9.2 2.7 13.4L32 40.4 20.3 47l2.7-13.4-10-9.2 13.4-1.8z' fill='%23ffc93c'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#12101c;
+    --ink-2:#1d1a2c;
+    --paper:#f7f4ee;
+    --paper-2:#efeae1;
+    --gold:#ffc93c;
+    --gold-deep:#e2a500;
+    --hot:#ff5b39;
+    --muted:#6b6577;
+    --line:rgba(18,16,28,.12);
+    --radius:16px;
+    --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px;}
+
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(18,16,28,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .bar{display:flex;align-items:center;gap:18px;height:66px;}
+  .logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+  .logo .mark{width:34px;height:34px;flex:none;}
+  .logo .brand{
+    color:#fff;font-weight:800;font-size:16px;letter-spacing:.4px;white-space:nowrap;
+  }
+  nav.main{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap;}
+  nav.main a{
+    color:#cfc9dd;font-size:14px;padding:7px 12px;border-radius:999px;
+    transition:.18s;
+  }
+  nav.main a:hover{color:var(--ink);background:var(--gold);}
+  .nav-toggle{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:8px;padding:6px 10px;font-size:13px;}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:
+      radial-gradient(700px 340px at 88% -10%, rgba(255,201,60,.20), transparent 65%),
+      radial-gradient(520px 300px at 6% 110%, rgba(255,91,57,.16), transparent 60%),
+      var(--ink);
+    color:#fff;padding:52px 0 58px;position:relative;overflow:hidden;
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.45fr .9fr;gap:44px;align-items:center;}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;letter-spacing:2px;color:var(--gold);
+    border:1px solid rgba(255,201,60,.4);border-radius:999px;padding:4px 12px;margin-bottom:18px;
+  }
+  .kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--hot);animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.25;}}
+  h1{
+    font-size:clamp(26px,3.6vw,42px);
+    line-height:1.3;margin:0 0 16px;font-weight:800;letter-spacing:.5px;
+  }
+  h1 .hl{color:var(--gold);}
+  .hero p.lead{color:#c8c2d6;font-size:15.5px;margin:0 0 26px;max-width:34em;}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 22px;border-radius:999px;font-size:14.5px;font-weight:700;
+    transition:.18s;cursor:pointer;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--gold);color:var(--ink);}
+  .btn-primary:hover{background:#ffd766;transform:translateY(-1px);}
+  .btn-ghost{border-color:rgba(255,255,255,.28);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.10);}
+  .btn[aria-disabled="true"]{opacity:.55;pointer-events:none;}
+
+  .hero-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:var(--radius);
+    padding:20px 20px 18px;
+  }
+  .hero-card .tag{font-size:12px;color:var(--gold);letter-spacing:1.5px;margin-bottom:10px;}
+  .hero-card ul{list-style:none;margin:0;padding:0;}
+  .hero-card li{
+    display:flex;gap:10px;align-items:baseline;
+    font-size:14px;color:#d6d1e2;padding:8px 0;
+    border-bottom:1px dashed rgba(255,255,255,.10);
+  }
+  .hero-card li:last-child{border-bottom:none;}
+  .hero-card li b{color:#fff;font-weight:600;}
+  .hero-card .num{color:var(--hot);font-weight:800;font-size:12px;flex:none;}
+
+  /* ---------- ticker ---------- */
+  .ticker{
+    background:var(--gold);color:var(--ink);
+    font-size:13px;font-weight:600;
+    padding:9px 0;overflow:hidden;white-space:nowrap;
+  }
+  .ticker .wrap{display:flex;gap:36px;align-items:center;}
+  .ticker span{flex:none;}
+  .ticker .sep{color:rgba(18,16,28,.45);}
+
+  /* ---------- sections ---------- */
+  section{padding:56px 0;}
+  section.alt{background:var(--paper-2);}
+  .sec-head{display:flex;align-items:flex-end;gap:16px;margin-bottom:28px;flex-wrap:wrap;}
+  .sec-head h2{
+    font-size:clamp(20px,2.4vw,26px);margin:0;font-weight:800;letter-spacing:.4px;
+  }
+  .sec-head h2::before{
+    content:"";display:inline-block;width:8px;height:20px;border-radius:3px;
+    background:var(--hot);margin-right:11px;vertical-align:-2px;
+  }
+  .sec-head .sub{font-size:13.5px;color:var(--muted);margin-left:auto;}
+
+  /* hot list */
+  .hot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .card{
+    background:#fff;border-radius:var(--radius);
+    border:1px solid var(--line);
+    padding:22px 22px 20px;
+    display:flex;flex-direction:column;gap:10px;
+    transition:.2s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(18,16,28,.09);}
+  .card .badge{
+    align-self:flex-start;font-size:11.5px;font-weight:700;letter-spacing:1px;
+    color:var(--ink);background:rgba(255,201,60,.55);
+    padding:3px 9px;border-radius:6px;
+  }
+  .card .badge.red{background:rgba(255,91,57,.18);color:#c02f12;}
+  .card h3{font-size:16.5px;margin:0;line-height:1.5;font-weight:700;}
+  .card p{font-size:14px;color:#4a4558;margin:0;}
+  .card .meta{font-size:12.5px;color:var(--muted);margin-top:auto;padding-top:6px;}
+
+  /* 寸止 explain */
+  .explain{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+  .explain .prose p{font-size:15px;margin:0 0 14px;color:#332e42;}
+  .explain .prose b{color:var(--ink);}
+  .steps{display:flex;flex-direction:column;gap:14px;}
+  .step{
+    display:flex;gap:14px;background:#fff;border:1px solid var(--line);
+    border-radius:14px;padding:16px 18px;
+  }
+  .step .no{
+    width:28px;height:28px;flex:none;border-radius:50%;
+    background:var(--ink);color:var(--gold);font-size:13px;font-weight:800;
+    display:grid;place-items:center;
+  }
+  .step h4{margin:0 0 4px;font-size:15px;}
+  .step p{margin:0;font-size:13.5px;color:#4a4558;}
+
+  /* daily table */
+  .day-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line);}
+  .day-row{
+    display:grid;grid-template-columns:96px 1fr auto;gap:18px;align-items:center;
+    padding:16px 6px;border-bottom:1px solid var(--line);
+  }
+  .day-row .date{font-weight:800;font-size:14.5px;color:var(--ink);}
+  .day-row .date small{display:block;font-size:11.5px;color:var(--muted);font-weight:500;letter-spacing:1px;}
+  .day-row .txt{font-size:14.5px;color:#332e42;}
+  .day-row .state{
+    font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;
+    background:rgba(255,91,57,.14);color:#c02f12;white-space:nowrap;
+  }
+  .day-row .state.done{background:rgba(18,16,28,.07);color:var(--muted);}
+
+  /* filter */
+  .filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px;align-items:center;}
+  .filter-bar input[type=search]{
+    flex:1 1 240px;min-width:0;padding:10px 14px;font-size:14px;
+    border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);
+    outline:none;font-family:inherit;
+  }
+  .filter-bar input[type=search]:focus{border-color:var(--gold-deep);box-shadow:0 0 0 3px rgba(255,201,60,.28);}
+  .chip{
+    font-size:13px;padding:7px 14px;border-radius:999px;cursor:pointer;
+    background:#fff;border:1px solid var(--line);color:#4a4558;transition:.16s;font-family:inherit;
+  }
+  .chip:hover{border-color:var(--gold-deep);}
+  .chip.on{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .feed{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .feed .card{padding:20px;}
+  .empty{font-size:14px;color:var(--muted);padding:28px 0;display:none;}
+
+  /* notice */
+  .notice{
+    background:#fff;border-left:5px solid var(--hot);
+    border-radius:12px;padding:20px 22px;font-size:14px;color:#3a3548;
+  }
+  .notice b{color:var(--ink);}
+
+  /* faq */
+  .faq{display:flex;flex-direction:column;gap:10px;}
+  details{
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:0 20px;
+  }
+  details[open]{border-color:rgba(255,201,60,.7);}
+  summary{
+    cursor:pointer;list-style:none;padding:16px 0;font-weight:700;font-size:15px;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";color:var(--gold-deep);font-size:20px;font-weight:400;line-height:1;}
+  details[open] summary::after{content:"–";}
+  details p{margin:0 0 16px;font-size:14px;color:#4a4558;}
+
+  /* footer */
+  footer.site{background:var(--ink);color:#b7b1c6;padding:42px 0 30px;font-size:13.5px;}
+  footer.site .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:28px;}
+  footer.site .brandline{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:15px;margin-bottom:10px;}
+  footer.site .brandline svg{width:26px;height:26px;flex:none;}
+  footer.site h5{color:#fff;font-size:13.5px;margin:0 0 10px;letter-spacing:1px;}
+  footer.site ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;}
+  footer.site a:hover{color:var(--gold);}
+  footer.site .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-size:12.5px;color:#807a92;}
+
+  /* responsive */
+  @media (max-width:940px){
+    .hero .wrap{grid-template-columns:1fr;gap:30px;}
+    .hot-grid{grid-template-columns:1fr 1fr;}
+    .explain{grid-template-columns:1fr;gap:26px;}
+    footer.site .grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:720px){
+    .bar{height:60px;}
+    .logo .brand{font-size:13.5px;}
+    .logo .mark{width:28px;height:28px;}
+    nav.main{
+      display:none;position:absolute;top:60px;left:0;right:0;
+      background:var(--ink);flex-direction:column;gap:2px;
+      padding:12px 18px 18px;border-bottom:1px solid rgba(255,255,255,.1);
+    }
+    nav.main.open{display:flex;}
+    nav.main a{padding:10px 8px;font-size:15px;}
+    .nav-toggle{display:block;}
+    .hero{padding:36px 0 42px;}
+    .hero p.lead{font-size:14.5px;}
+    section{padding:40px 0;}
+    .hot-grid,.feed{grid-template-columns:1fr;}
+    .day-row{grid-template-columns:1fr auto;gap:6px 12px;}
+    .day-row .txt{grid-column:1 / -1;}
+    .sec-head .sub{margin-left:0;}
+    footer.site .grid{grid-template-columns:1fr;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="r星每日大赛寸止挑战首页">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#221e33"/>
+        <path d="M32 10l5.6 12.6L51 24.4l-10 9.2 2.7 13.4L32 40.4 20.3 47l2.7-13.4-10-9.2 13.4-1.8z" fill="#ffc93c"/>
+      </svg>
+      <span class="brand">r星每日大赛寸止挑战</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+    <nav class="main" id="mainNav" aria-label="主导航">
+      <a href="#today">今日看点</a>
+      <a href="#howto">挑战怎么玩</a>
+      <a href="#daily">每日赛况</a>
+      <a href="#feed">吃瓜爆料</a>
+      <a href="#faq">常见疑问</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="h1wrap">
+    <div class="wrap">
+      <div id="h1wrap">
+        <span class="kicker"><span class="dot"></span>热点 · 每日更新</span>
+        <h1>r星每日大赛寸止挑战</h1>
+        <p class="lead">这里是围绕 r星每日大赛寸止挑战 的热点内容首页：每天汇总当日大赛的寸止挑战看点、网友吃瓜讨论与爆料脉络，把散落在各处的声音拼成一条清晰的时间线，方便你快速看懂今天又发生了什么。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#today">查看今日看点</a>
+          <a class="btn btn-ghost" href="#feed">进入吃瓜爆料区</a>
+          <a class="btn btn-ghost" href="#" download data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="今日速览">
+        <div class="tag">今日速览 · 寸止挑战</div>
+        <ul>
+          <li><span class="num">01</span><span><b>关键词热度</b>：r星每日大赛寸止挑战 讨论集中在挑战规则与翻车瞬间。</span></li>
+          <li><span class="num">02</span><span><b>看点主线</b>：谁能稳住节奏，成为当日“寸止”代表人物。</span></li>
+          <li><span class="num">03</span><span><b>吃瓜焦点</b>：爆料帖与现场截图是否对得上，成为争论核心。</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="wrap">
+      <span>r星每日大赛寸止挑战 · 今日看点已更新</span>
+      <span class="sep">/</span>
+      <span>寸止挑战规则再被讨论</span>
+      <span class="sep">/</span>
+      <span>吃瓜区新增多条爆料线索</span>
+      <span class="sep">/</span>
+      <span>每日赛况按日期归档</span>
+    </div>
+  </div>
+
+  <!-- TODAY -->
+  <section id="today">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>今日看点</h2>
+        <span class="sub">围绕 r星每日大赛寸止挑战 的三条主线</span>
+      </div>
+      <div class="hot-grid">
+        <article class="card">
+          <span class="badge">规则</span>
+          <h3>寸止挑战的“寸”到底卡在哪</h3>
+          <p>讨论最集中的一点，是挑战中“差一点就完成”的判定边界。有人主张按秒计，有人主张按动作幅度算，双方各执一词，也让 r星每日大赛寸止挑战 的规则讨论持续升温。</p>
+          <div class="meta">看点 · 规则争议</div>
+        </article>
+        <article class="card">
+          <span class="badge red">翻车</span>
+          <h3>当日最出圈的“临门一脚”瞬间</h3>
+          <p>多个帖子提到同一类桥段：挑战者几乎撑到最后，却在收尾动作上失手。截图与短视频被反复转发，成为 r星每日大赛寸止挑战 当天传播最广的素材。</p>
+          <div class="meta">看点 · 现场瞬间</div>
+        </article>
+        <article class="card">
+          <span class="badge">吃瓜</span>
+          <h3>爆料帖与现场记录能不能对上</h3>
+          <p>吃瓜区出现的爆料，需要与公开的现场记录交叉比对。目前能确认的是讨论确实存在，具体细节各方说法不一，这也是每日大赛寸止挑战话题持续发酵的原因。</p>
+          <div class="meta">看点 · 爆料线索</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOWTO -->
+  <section class="alt" id="howto">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>挑战怎么玩：读懂寸止挑战</h2>
+        <span class="sub">先理解玩法，再看懂热点</span>
+      </div>
+      <div class="explain">
+        <div class="prose">
+          <p><b>“寸止”</b>在网络语境里指的是一种“逼近临界但及时收住”的状态。放到 r星每日大赛寸止挑战 里，它被用来形容挑战者在关键节点上稳住、不越线的表现，也因此衍生出大量关于“稳”与“崩”的讨论。</p>
+          <p>每日大赛的形式，是把这种挑战按天推进：每天产生新的挑战片段、新的完成情况与新的争议点。读者关注 r星每日大赛寸止挑战，往往不是为了看完整规则文本，而是想知道<b>今天谁稳住了、谁翻车了、爆料又指向谁</b>。</p>
+          <p>需要说明的是，网络热点中的说法更替很快，同一条爆料在不同帖子中常有出入。本页呈现的是讨论脉络与公开可见的观点，具体细节仍以当事人和原始记录为准。</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="no">1</div>
+            <div><h4>看挑战设定</h4><p>先弄清楚当天的挑战要求，再判断表现是否算“寸止成功”。</p></div>
+          </div>
+          <div class="step">
+            <div class="no">2</div>
+            <div><h4>看关键节点</h4><p>多数名场面出现在收尾阶段，那里最容易出现“差一点”。</p></div>
+          </div>
+          <div class="step">
+            <div class="no">3</div>
+            <div><h4>看多方说法</h4><p>吃瓜爆料与现场记录对照着看，别急着下结论。</p></div>
+          </div>
+          <div class="step">
+            <div class="no">4</div>
+            <div><h4>看后续走向</h4><p>话题隔天是否延续，往往比单条爆料更能说明热度真假。</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAILY -->
+  <section id="daily">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>每日赛况</h2>
+        <span class="sub">按日期归档的 r星每日大赛寸止挑战 讨论记录</span>
+      </div>
+      <div class="day-list">
+        <div class="day-row">
+          <div class="date">今日<small>DAY · NOW</small></div>
+          <div class="txt">寸止挑战规则判定再被讨论，吃瓜区出现多条关于收尾动作的爆料线索。</div>
+          <span class="state">热议中</span>
+        </div>
+        <div class="day-row">
+          <div class="date">昨日<small>DAY · -1</small></div>
+          <div class="txt">一段“稳到最后”的片段被大量转发，成为 r星每日大赛寸止挑战 的代表画面。</div>
+          <span class="state done">已归档</span>
+        </div>
+        <div class="day-row">
+          <div class="date">前日<small>DAY · -2</small></div>
+          <div class="txt">有帖子质疑部分爆料与现场记录不符，讨论焦点从挑战本身转向信息真伪。</div>
+          <span class="state done">已归档</span>
+        </div>
+        <div class="day-row">
+          <div class="date">三日<small>DAY · -3</small></div>
+          <div class="txt">每日大赛寸止挑战相关词条首次集中出现，规则解释类内容阅读量明显上升。</div>
+          <span class="state done">已归档</span>
+        </div>
+      </div>
+      <div class="notice" style="margin-top:26px;">
+        <b>阅读提示：</b>赛况条目用于记录话题走向，不构成对任何个人或事件的定性。遇到爆料内容，建议先核对原始出处，再决定是否采信。
+      </div>
+    </div>
+  </section>
+
+  <!-- FEED -->
+  <section class="alt" id="feed">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>吃瓜爆料区</h2>
+        <span class="sub">按类型筛选当日讨论</span>
+      </div>
+      <div class="filter-bar">
+        <input type="search" id="feedSearch" placeholder="搜索关键词，如：规则、翻车、爆料" aria-label="搜索吃瓜爆料">
+        <button class="chip on" data-filter="all" type="button">全部</button>
+        <button class="chip" data-filter="rule" type="button">规则</button>
+        <button class="chip" data-filter="fail" type="button">翻车</button>
+        <button class="chip" data-filter="gossip" type="button">爆料</button>
+      </div>
+      <div class="feed" id="feedList">
+        <article class="card" data-type="rule" data-key="规则 判定 寸止 挑战">
+          <span class="badge">规则</span>
+          <h3>“差一点”算不算完成？</h3>
+          <p>挑战的判定标准是 r星每日大赛寸止挑战 讨论中反复出现的问题。支持严格判定的人认为边界必须清晰，反对者则觉得这样会削弱看点。</p>
+          <div class="meta">讨论热度 · 高</div>
+        </article>
+        <article class="card" data-type="fail" data-key="翻车 收尾 失手">
+          <span class="badge red">翻车</span>
+          <h3>收尾失手成为当日高频桥段</h3>
+          <p>多个片段显示挑战者在最后一步出现动作变形。由于画面相似度高，这些素材被剪成合集传播，进一步推高了寸止挑战的讨论量。</p>
+          <div class="meta">讨论热度 · 高</div>
+        </article>
+        <article class="card" data-type="gossip" data-key="爆料 出处 截图 真伪">
+          <span class="badge">爆料</span>
+          <h3>爆料帖的出处成了新焦点</h3>
+          <p>吃瓜区里流传的截图，有的能找到原始发布记录，有的则无法溯源。对 r星每日大赛寸止挑战 的读者来说，先看出处再看内容，是更稳妥的阅读方式。</p>
+          <div class="meta">讨论热度 · 中</div>
+        </article>
+        <article class="card" data-type="rule" data-key="规则 每日 更新 设定">
+          <span class="badge">规则</span>
+          <h3>每日设定为何容易引发争议</h3>
+          <p>每天更换的挑战设定，让前一天的判断标准未必适用于今天。这种不确定性，恰好是每日大赛寸止挑战话题保持新鲜感的原因之一。</p>
+          <div class="meta">讨论热度 · 中</div>
+        </article>
+        <article class="card" data-type="gossip" data-key="爆料 说法 不一 对照">
+          <span class="badge">爆料</span>
+          <h3>同一条爆料，两种说法</h3>
+          <p>同一件事在不同帖子里有不同版本，是目前 r星每日大赛寸止挑战 讨论区的常见现象。把两种说法并排放，反而更容易看出哪些信息是稳定的。</p>
+          <div class="meta">讨论热度 · 中</div>
+        </article>
+        <article class="card" data-type="fail" data-key="翻车 名场面 传播">
+          <span class="badge red">翻车</span>
+          <h3>为什么翻车片段比成功片段更火</h3>
+          <p>从传播规律看，意外瞬间更容易被记住。寸止挑战的成功需要克制，而失手只需要一秒，这种反差让翻车片段在吃瓜讨论中占据更大篇幅。</p>
+          <div class="meta">讨论热度 · 中</div>
+        </article>
+      </div>
+      <p class="empty" id="feedEmpty">没有匹配的条目，换个关键词试试。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见疑问</h2>
+        <span class="sub">关于 r星每日大赛寸止挑战 的基础问答</span>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>r星每日大赛寸止挑战是什么？</summary>
+          <p>它是网络上围绕“每日大赛”与“寸止挑战”形成的一个热点话题集合。人们讨论的重点通常落在挑战设定、完成判定与当日流传的片段上，而不是一套固定的官方规则。</p>
+        </details>
+        <details>
+          <summary>“寸止”在这里是什么意思？</summary>
+          <p>在网络语境中，“寸止”形容逼近临界却及时收住的状态。用在挑战里，多指关键时刻稳住不越线；用不好就会变成“差一点”的翻车现场，这也是话题看点所在。</p>
+        </details>
+        <details>
+          <summary>爆料内容可以直接相信吗？</summary>
+          <p>不建议。吃瓜区的爆料来源复杂，同一条消息常有多个版本。比较稳妥的做法是核对原始出处与公开记录，再判断其可信程度。本页只记录讨论脉络，不对具体事件定性。</p>
+        </details>
+        <details>
+          <summary>每日赛况会一直更新吗？</summary>
+          <p>赛况区按日期归档话题走向，随着新讨论出现会补充新的条目。已有条目保留原样，方便回看某一天 r星每日大赛寸止挑战 的讨论重点。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="brandline">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2a2540"/>
+            <path d="M32 10l5.6 12.6L51 24.4l-10 9.2 2.7 13.4L32 40.4 20.3 47l2.7-13.4-10-9.2 13.4-1.8z" fill="#ffc93c"/>
+          </svg>
+          r星每日大赛寸止挑战
+        </div>
+        <p style="margin:0;max-width:26em;">一个记录 r星每日大赛寸止挑战 热点走向的内容首页：今日看点、玩法理解、每日赛况与吃瓜爆料，按天梳理讨论脉络。</p>
+      </div>
+      <div>
+        <h5>栏目</h5>
+        <ul>
+          <li><a href="#today">今日看点</a></li>
+          <li><a href="#howto">挑战怎么玩</a></li>
+          <li><a href="#daily">每日赛况</a></li>
+          <li><a href="#feed">吃瓜爆料区</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>说明</h5>
+        <ul>
+          <li><a href="#faq">常见疑问</a></li>
+          <li><a href="#" download data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a></li>
+          <li>内容以公开讨论为依据</li>
+          <li>不对具体事件定性</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© r星每日大赛寸止挑战 · 热点内容首页。页面观点整理自公开讨论，细节请以原始出处为准。</div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var t = document.getElementById('navToggle');
+    var nav = document.getElementById('mainNav');
+    if(t && nav){
+      t.addEventListener('click', function(){
+        var open = nav.classList.toggle('open');
+        t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          nav.classList.remove('open');
+          t.setAttribute('aria-expanded','false');
+        });
+      });
+    }
+
+    var chips = document.querySelectorAll('.chip');
+    var cards = document.querySelectorAll('#feedList .card');
+    var input = document.getElementById('feedSearch');
+    var empty = document.getElementById('feedEmpty');
+    var active = 'all';
+
+    function apply(){
+      var q = (input && input.value || '').trim().toLowerCase();
+      var shown = 0;
+      cards.forEach(function(c){
+        var type = c.getAttribute('data-type');
+        var key = (c.getAttribute('data-key') || '') + ' ' + c.textContent.toLowerCase();
+        var okType = (active === 'all') || (type === active);
+        var okText = !q || key.toLowerCase().indexOf(q) !== -1;
+        var show = okType && okText;
+        c.style.display = show ? '' : 'none';
+        if(show) shown++;
+      });
+      if(empty) empty.style.display = shown ? 'none' : 'block';
+    }
+
+    chips.forEach(function(ch){
+      ch.addEventListener('click', function(){
+        chips.forEach(function(x){ x.classList.remove('on'); });
+        ch.classList.add('on');
+        active = ch.getAttribute('data-filter');
+        apply();
+      });
+    });
+    if(input) input.addEventListener('input', apply);
+  })();
+</script>
+
+</body>
+</html>
