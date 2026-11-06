@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>555最新netflix新剧-奈飞新剧上线推荐_近期热门美剧追剧清单</title>
+<meta name="description" content="555最新netflix新剧页面汇总奈飞近期上线的剧集看点、类型分布与追剧入口，按悬疑、剧情、喜剧等方向整理近期热门美剧清单，帮助你快速找到下一部要看的Netflix新剧。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0f'/%3E%3Cpath d='M18 14h8v36h-8z' fill='%23e50914'/%3E%3Cpath d='M30 14h8l14 36h-8z' fill='%23e50914'/%3E%3Cpath d='M30 14h4l6 16v20h-4z' fill='%23ff5a5f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0b0b0f;
+  --panel:#14141b;
+  --panel-2:#1b1b24;
+  --line:#2a2a36;
+  --text:#f2f2f5;
+  --muted:#a3a3b2;
+  --red:#e50914;
+  --red-soft:#ff5a5f;
+  --radius:16px;
+  --maxw:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,11,15,.86);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;gap:26px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;letter-spacing:.2px;white-space:nowrap}
+.logo .mark{width:34px;height:34px;flex:0 0 auto;border-radius:9px;background:linear-gradient(145deg,#e50914,#7a0309);display:grid;place-items:center}
+.logo .mark svg{width:18px;height:18px}
+.logo span.brand{color:#fff}
+nav.main-nav{margin-left:auto;display:flex;gap:22px;font-size:14.5px;color:var(--muted)}
+nav.main-nav a{position:relative;padding:6px 0;transition:color .2s}
+nav.main-nav a:hover{color:#fff}
+nav.main-nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--red);transition:width .2s}
+nav.main-nav a:hover::after{width:100%}
+.header-cta{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--red);color:#fff;font-size:14px;font-weight:600;
+  padding:9px 18px;border-radius:999px;white-space:nowrap;
+  transition:transform .18s,box-shadow .18s;
+}
+.header-cta:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(229,9,20,.35)}
+
+/* hero */
+.hero{padding:64px 0 52px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(720px 320px at 78% 6%,rgba(229,9,20,.22),transparent 62%),
+             radial-gradient(520px 300px at 8% 92%,rgba(80,40,160,.20),transparent 65%);
+}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--red-soft);font-weight:600;letter-spacing:.5px;margin-bottom:18px}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(229,9,20,.18)}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.22;font-weight:800;letter-spacing:-.5px}
+h1 .accent{color:var(--red-soft)}
+.hero p.lead{margin-top:18px;font-size:16px;color:var(--muted);max-width:540px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn-primary,.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;
+  padding:12px 24px;border-radius:999px;transition:.18s;
+}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:#f6121d;transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{border-color:#4a4a5c;background:rgba(255,255,255,.05)}
+.hero-stats{display:flex;gap:34px;margin-top:36px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:22px;font-weight:800;color:#fff}
+.hero-stats .stat span{font-size:13px;color:var(--muted)}
+
+/* hero art */
+.hero-art{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#1d1d27,#101017);min-height:320px;display:grid;place-items:center;padding:26px}
+.hero-art .glow{position:absolute;width:240px;height:240px;border-radius:50%;filter:blur(60px);background:rgba(229,9,20,.35);top:-40px;right:-30px}
+.hero-art .ring{position:absolute;width:220px;height:220px;border-radius:50%;border:1px dashed rgba(255,255,255,.14);bottom:-70px;left:-50px}
+.hero-art svg.poster{position:relative;width:100%;max-width:300px}
+.hero-art .tag{position:absolute;top:16px;left:16px;font-size:12px;font-weight:700;letter-spacing:.6px;color:#fff;background:rgba(229,9,20,.9);padding:5px 12px;border-radius:999px}
+
+/* section base */
+section{padding:56px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-.3px}
+.sec-head p{color:var(--muted);font-size:14.5px;max-width:560px;margin-top:8px}
+.sec-head .more{font-size:14px;color:var(--red-soft);font-weight:600;white-space:nowrap}
+.sec-head .more:hover{text-decoration:underline}
+
+/* picks */
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;display:flex;flex-direction:column;gap:12px;transition:.2s;
+}
+.card:hover{border-color:#3d3d4e;transform:translateY(-3px);background:var(--panel-2)}
+.card .thumb{height:120px;border-radius:11px;display:grid;place-items:center;overflow:hidden;position:relative}
+.thumb.t1{background:linear-gradient(135deg,#2b1220,#4a1626)}
+.thumb.t2{background:linear-gradient(135deg,#101d2c,#162c44)}
+.thumb.t3{background:linear-gradient(135deg,#1e1a10,#3a2f14)}
+.thumb svg{width:64px;height:64px;opacity:.9}
+.card .meta{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.card .meta .pill{background:rgba(229,9,20,.15);color:var(--red-soft);padding:2px 9px;border-radius:999px;font-weight:600}
+.card h3{font-size:17px;font-weight:700;line-height:1.4}
+.card p{font-size:14px;color:var(--muted);flex:1}
+.card .link{font-size:13.5px;font-weight:600;color:var(--red-soft)}
+.card .link:hover{text-decoration:underline}
+
+/* genres */
+.genre-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.genre{
+  display:flex;align-items:center;gap:12px;padding:18px;border-radius:13px;
+  background:var(--panel);border:1px solid var(--line);transition:.2s;font-size:14.5px;font-weight:600;
+}
+.genre:hover{border-color:var(--red);background:var(--panel-2)}
+.genre .ico{width:36px;height:36px;border-radius:10px;background:rgba(229,9,20,.14);display:grid;place-items:center;flex:0 0 auto}
+.genre .ico svg{width:18px;height:18px;stroke:var(--red-soft)}
+.genre small{display:block;font-size:12px;color:var(--muted);font-weight:400}
+
+/* watchlist / split */
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}
+.article-body p{color:#c8c8d4;font-size:15px;margin-bottom:16px}
+.article-body p strong{color:#fff}
+.article-body h3{font-size:18px;margin:26px 0 10px;font-weight:700}
+.article-body ul{list-style:none;display:grid;gap:10px;margin:6px 0 18px}
+.article-body ul li{position:relative;padding-left:20px;font-size:14.5px;color:#c8c8d4}
+.article-body ul li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:2px;background:var(--red);transform:rotate(45deg)}
+
+.tipbox{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.tipbox h3{font-size:16px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.tipbox h3 svg{width:18px;height:18px;stroke:var(--red-soft)}
+.tip-list{display:grid;gap:14px}
+.tip-list .tip{display:flex;gap:12px;font-size:14px;color:var(--muted)}
+.tip-list .tip b{color:#fff;flex:0 0 58px;font-weight:700;font-size:13px;color:var(--red-soft)}
+.tipbox .download{
+  display:flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;
+  background:var(--red);color:#fff;font-size:14.5px;font-weight:600;padding:11px;border-radius:10px;
+  pointer-events:none;opacity:.9;
+}
+
+/* table */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+table{width:100%;border-collapse:collapse;min-width:620px;font-size:14px}
+thead th{text-align:left;padding:14px 18px;color:var(--muted);font-weight:600;font-size:13px;border-bottom:1px solid var(--line);white-space:nowrap}
+tbody td{padding:14px 18px;border-bottom:1px solid rgba(42,42,54,.6);color:#d6d6e0}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(255,255,255,.025)}
+td .tag{font-size:12px;padding:2px 9px;border-radius:999px;background:rgba(229,9,20,.14);color:var(--red-soft);font-weight:600}
+td .tag.blue{background:rgba(90,140,255,.14);color:#8fb0ff}
+td .tag.green{background:rgba(90,220,160,.13);color:#7fe0b0}
+
+/* faq */
+.faq{display:grid;gap:12px;max-width:860px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px;transition:.2s}
+details[open]{background:var(--panel-2);border-color:#3d3d4e}
+summary{cursor:pointer;font-weight:600;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:20px;color:var(--red-soft);font-weight:400;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);font-size:14px;margin-top:12px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#08080c;margin-top:20px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:32px}
+.foot-brand .logo{margin-bottom:14px}
+.foot-brand p{color:var(--muted);font-size:13.5px;max-width:340px}
+.foot-col h4{font-size:13px;color:#fff;margin-bottom:14px;letter-spacing:.4px}
+.foot-col a{display:block;color:var(--muted);font-size:13.5px;margin-bottom:9px;transition:.15s}
+.foot-col a:hover{color:var(--red-soft)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#6f6f80;font-size:12.5px}
+
+/* responsive */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-art{max-width:420px}
+  .picks{grid-template-columns:repeat(2,1fr)}
+  .genre-grid{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:32px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  nav.main-nav{display:none}
+  .header-inner{gap:14px;height:62px}
+  .header-cta{padding:8px 14px;font-size:13px}
+  .logo{font-size:15px}
+  .logo .mark{width:30px;height:30px}
+  .hero{padding:42px 0 38px}
+  .hero-stats{gap:22px}
+  .hero-stats .stat b{font-size:19px}
+  section{padding:42px 0}
+  .picks{grid-template-columns:1fr}
+  .genre-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:26px}
+  .btn-primary,.btn-ghost{padding:11px 20px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="555最新netflix新剧首页">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 3h4v18H5z" fill="#fff"/><path d="M11 3h4l6 18h-4z" fill="#fff" opacity=".85"/></svg>
+      </span>
+      <span class="brand">555最新netflix新剧</span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#picks">近期上新</a>
+      <a href="#genres">类型速查</a>
+      <a href="#guide">追剧节奏</a>
+      <a href="#schedule">上线一览</a>
+      <a href="#faq">常见疑问</a>
+    </nav>
+    <a class="header-cta" href="#picks">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9z"/></svg>
+      开始挑剧
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>奈飞新剧 · 近期上线速览</span>
+        <h1>555最新netflix新剧</h1>
+        <p class="lead">把奈飞最近上线的剧集按类型、节奏和看点归拢到一处。不堆砌片单，只把每部剧适合谁、看点在哪、值不值得现在开看讲清楚，让你少花时间在滑动海报上。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#picks">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9z"/></svg>
+            查看近期上新
+          </a>
+          <a class="btn-ghost" href="#guide">怎么安排追剧</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>悬疑 / 剧情 / 喜剧</b><span>三类主线覆盖多数观看需求</span></div>
+          <div class="stat"><b>6–10 集</b><span>多数新剧单季篇幅区间</span></div>
+          <div class="stat"><b>一次看一集</b><span>按节奏挑剧更省心</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="glow"></span>
+        <span class="ring"></span>
+        <span class="tag">NOW STREAMING</span>
+        <svg class="poster" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="16" width="280" height="188" rx="16" fill="#1a1a24" stroke="#33333f"/>
+          <rect x="26" y="34" width="120" height="10" rx="5" fill="#e50914"/>
+          <rect x="26" y="56" width="180" height="8" rx="4" fill="#3a3a48"/>
+          <rect x="26" y="74" width="150" height="8" rx="4" fill="#2c2c38"/>
+          <rect x="26" y="104" width="76" height="76" rx="10" fill="#241820"/>
+          <path d="M52 124l30 18-30 18z" fill="#e50914"/>
+          <rect x="116" y="104" width="76" height="76" rx="10" fill="#161f2c"/>
+          <circle cx="154" cy="142" r="20" stroke="#4f7dff" stroke-width="3" fill="none"/>
+          <path d="M154 130v12l8 6" stroke="#4f7dff" stroke-width="3" stroke-linecap="round"/>
+          <rect x="206" y="104" width="60" height="76" rx="10" fill="#1f1a10"/>
+          <path d="M220 162c0-16 8-26 16-30 0 14-4 24-16 30z" fill="#e0b04f"/>
+          <rect x="26" y="192" width="240" height="0" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>近期上新值得先看的三部</h2>
+          <p>从 555最新netflix新剧 的更新里挑出讨论度较高、类型区分明显的三部，分别对应悬疑解谜、现实剧情与轻喜剧三种观看情绪。</p>
+        </div>
+        <a class="more" href="#schedule">查看上线一览 →</a>
+      </div>
+      <div class="picks">
+        <article class="card">
+          <div class="thumb t1">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#ff8a8f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="30" cy="28" r="14"/><path d="M40 38l12 12"/><path d="M24 28h12M30 22v12"/></svg>
+          </div>
+          <div class="meta"><span class="pill">悬疑</span><span>单季 · 适合连看</span></div>
+          <h3>解谜型悬疑剧</h3>
+          <p>线索铺得密，前两集就抛出核心谜面，适合喜欢边看边推的观众。人物关系是推进主线的主要动力，中途暂停回看的价值高。</p>
+          <a class="link" href="#schedule">看它在本周的位置</a>
+        </article>
+        <article class="card">
+          <div class="thumb t2">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#8fb0ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="20" width="40" height="28" rx="4"/><path d="M12 30h40"/><path d="M22 38h8"/></svg>
+          </div>
+          <div class="meta"><span class="pill">剧情</span><span>节奏偏慢 · 适合细看</span></div>
+          <h3>现实题材剧情剧</h3>
+          <p>把家庭与职场的选择题放在同一时间线上，情绪浓度高但爆发点靠后。适合每晚一集慢慢看，留出消化的时间。</p>
+          <a class="link" href="#guide">看追剧节奏建议</a>
+        </article>
+        <article class="card">
+          <div class="thumb t3">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#e0b04f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="18"/><path d="M26 28h.01M38 28h.01"/><path d="M24 38c4 5 12 5 16 0"/></svg>
+          </div>
+          <div class="meta"><span class="pill">喜剧</span><span>单集 30 分钟上下</span></div>
+          <h3>轻喜剧日常剧</h3>
+          <p>单集短、包袱密，适合吃饭或通勤时看。剧情连续度不高，跳集观看影响有限，是入门 555最新netflix新剧 的轻松选择。</p>
+          <a class="link" href="#genres">按类型继续找</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="genres" style="background:linear-gradient(180deg,#0d0d13,#0b0b0f);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>按类型速查奈飞新剧</h2>
+          <p>先确定今晚想看什么情绪，再进对应类型，比逐张翻海报快得多。这也是 555最新netflix新剧 页面的主要使用方式。</p>
+        </div>
+      </div>
+      <div class="genre-grid">
+        <a class="genre" href="#picks">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></span>
+          <span>悬疑推理<small>线索密集，适合连看</small></span>
+        </a>
+        <a class="genre" href="#picks">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 11h18"/></svg></span>
+          <span>现实剧情<small>情绪扎实，慢火细炖</small></span>
+        </a>
+        <a class="genre" href="#picks">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M9 15c2 2 4 2 6 0"/></svg></span>
+          <span>轻喜剧<small>单集短，随开随看</small></span>
+        </a>
+        <a class="genre" href="#schedule">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></span>
+          <span>上线时间<small>按周查看更新节奏</small></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap split">
+      <div class="article-body">
+        <div class="sec-head" style="margin-bottom:18px">
+          <div>
+            <h2>怎么把新剧看下去</h2>
+            <p>片单再多，看不完也是负担。下面把 555最新netflix新剧 里常见的三种观看习惯拆开讲，配合篇幅和节奏给出更实际的安排。</p>
+          </div>
+        </div>
+        <p>很多人打开 555最新netflix新剧 页面后，第一件事是把所有剧都加进清单，结果一部也没看完。<strong>更有效的顺序是先定观看时长，再定类型</strong>：工作日晚上只留四十分钟，就优先挑单集短的轻喜剧；周末有整块时间，再交给悬疑或剧情长剧。</p>
+        <h3>按篇幅决定开看时机</h3>
+        <p>多数奈飞新剧单季在 6 到 10 集之间，但集与集之间的黏性差别很大。悬疑类往往在每集结尾留下钩子，容易一口气看三四集；现实剧情类更依赖情绪累积，一次看一到两集反而更有回味。先看一集试水，再决定是否连看，是更稳妥的做法。</p>
+        <h3>按情绪挑类型</h3>
+        <ul>
+          <li>想动脑推理：优先悬疑，准备好纸笔记录人物关系。</li>
+          <li>想被故事压一压：选现实剧情，留出独处时间。</li>
+          <li>只想放松：轻喜剧，一集一个段落，不必记住太多细节。</li>
+        </ul>
+        <p>555最新netflix新剧 的更新节奏并不固定，同一周可能同时上线两三种类型。把清单按情绪分类，而不是按热度排序，能减少“点开又退出”的反复。</p>
+      </div>
+      <aside class="tipbox">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>追剧小提示</h3>
+        <div class="tip-list">
+          <div class="tip"><b>先试一集</b>第一集结束时的感受，比海报和简介更可信。</div>
+          <div class="tip"><b>避开剧透</b>悬疑剧先看完前两集再翻讨论区。</div>
+          <div class="tip"><b>留出间隔</b>剧情类连续看太久，情绪容易钝化。</div>
+          <div class="tip"><b>记录进度</b>同时在追多部时，记下看到第几集。</div>
+        </div>
+        <a class="download" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+          下载
+        </a>
+      </aside>
+    </div>
+  </section>
+
+  <section id="schedule" style="background:linear-gradient(180deg,#0d0d13,#0b0b0f);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>新剧上线一览</h2>
+          <p>把 555最新netflix新剧 里近期出现的新剧按类型、篇幅和适合的观看场景排成一张表，方便横向比较后再决定。</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>剧集方向</th><th>类型</th><th>篇幅</th><th>适合场景</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>解谜型悬疑剧</td><td><span class="tag">悬疑</span></td><td>单季 8 集左右</td><td>周末连看，边看边推</td></tr>
+            <tr><td>现实题材剧情剧</td><td><span class="tag blue">剧情</span></td><td>单季 6–10 集</td><td>每晚一集，慢慢消化</td></tr>
+            <tr><td>轻喜剧日常剧</td><td><span class="tag green">喜剧</span></td><td>单集 30 分钟上下</td><td>吃饭、通勤随手看</td></tr>
+            <tr><td>多线群像剧</td><td><span class="tag">剧情</span></td><td>单季 8 集左右</td><td>有整块时间时开看</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>关于 555最新netflix新剧 的常见疑问</h2>
+          <p>第一次使用这个页面时，问得最多的几个问题集中在这里。</p>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>555最新netflix新剧 里的剧都会同步上线吗？</summary>
+          <p>页面按近期上新的方向整理，但具体上线时间以奈飞平台实际排期为准。同一部剧在不同地区的可看时间可能不同，建议以平台内的上线状态为准。</p>
+        </details>
+        <details>
+          <summary>新剧没有中文字幕怎么办？</summary>
+          <p>多数奈飞新剧上线时会提供多语言字幕，可在播放器内切换。若某部剧暂时缺少中文字幕，可以稍等一段时间再查看，字幕通常会有更新。</p>
+        </details>
+        <details>
+          <summary>一次追几部比较合适？</summary>
+          <p>建议同时不超过两部：一部节奏紧的悬疑，一部轻松的喜剧，交替观看不容易疲劳。555最新netflix新剧 的片单可以随时回来补充，不必一次挑完。</p>
+        </details>
+        <details>
+          <summary>怎么判断一部新剧值不值得看？</summary>
+          <p>先看第一集的前二十分钟，观察人物关系是否清楚、节奏是否合你的习惯。比起评分，自己看完一集后的“想不想继续”更可靠。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#top">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 3h4v18H5z" fill="#fff"/><path d="M11 3h4l6 18h-4z" fill="#fff" opacity=".85"/></svg>
+          </span>
+          <span class="brand">555最新netflix新剧</span>
+        </a>
+        <p>围绕奈飞新剧的观看需求，整理类型、篇幅与追剧节奏，让 555最新netflix新剧 的片单更容易被真正看完。</p>
+      </div>
+      <div class="foot-col">
+        <h4>页面导航</h4>
+        <a href="#picks">近期上新</a>
+        <a href="#genres">类型速查</a>
+        <a href="#guide">追剧节奏</a>
+        <a href="#schedule">上线一览</a>
+      </div>
+      <div class="foot-col">
+        <h4>继续浏览</h4>
+        <a href="#faq">常见疑问</a>
+        <a href="#top">回到顶部</a>
+        <a href="#picks">挑一部开始看</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>555最新netflix新剧 · 新剧观看指引</span>
+      <span>剧集上线时间与可看状态以平台实际显示为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+  </html>
