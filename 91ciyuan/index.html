@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91次元免费在线观看-91次元动漫在线观看_次元番剧免费入口</title>
+<meta name="description" content="91次元免费在线观看主题首页，汇集次元动漫与番剧的免费在线观看入口，按题材、更新与热度分区呈现内容，并提供清晰的使用路径与站内搜索。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111a2b'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%2356e1c6' stroke-width='4'/%3E%3Cpath d='M26 22l16 10-16 10z' fill='%23ff7a8a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#0e1522;
+    --ink-2:#182238;
+    --paper:#f6f7fb;
+    --card:#ffffff;
+    --line:#e3e7f0;
+    --muted:#5d6a83;
+    --teal:#12b39a;
+    --coral:#ff6b7d;
+    --violet:#6a5cff;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px;}
+
+  /* Header */
+  header.site{
+    background:var(--ink);
+    color:#eef2fa;
+    position:sticky;top:0;z-index:50;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .bar{display:flex;align-items:center;gap:20px;min-height:70px;flex-wrap:wrap;}
+  .logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:17px;letter-spacing:.2px;color:#fff;}
+  .logo svg{flex:none;}
+  nav.main{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;}
+  nav.main a{
+    font-size:14.5px;color:#c3cde3;padding:7px 12px;border-radius:9px;transition:.18s;
+  }
+  nav.main a:hover,nav.main a:focus-visible{background:rgba(255,255,255,.1);color:#fff;}
+
+  /* Hero */
+  .hero{
+    background:radial-gradient(1100px 420px at 82% -10%,rgba(106,92,255,.35),transparent 62%),
+               radial-gradient(760px 380px at 8% 0%,rgba(18,179,154,.28),transparent 60%),
+               var(--ink-2);
+    color:#eef2fa;
+    padding:52px 0 58px;
+    overflow:hidden;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:40px;align-items:center;}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;letter-spacing:1.5px;color:#7ff0d9;
+    background:rgba(18,179,154,.14);border:1px solid rgba(18,179,154,.38);
+    padding:5px 12px;border-radius:999px;margin-bottom:18px;
+  }
+  h1{
+    font-size:clamp(27px,4.3vw,42px);
+    line-height:1.3;margin:0 0 16px;font-weight:800;letter-spacing:.5px;
+  }
+  h1 .hl{color:#7ff0d9;}
+  .hero p.lead{font-size:15.5px;color:#c0cbe2;margin:0 0 26px;max-width:560px;}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 22px;border-radius:999px;font-size:15px;font-weight:700;
+    transition:.18s;border:1px solid transparent;cursor:pointer;
+  }
+  .btn-primary{background:var(--teal);color:#04231e;}
+  .btn-primary:hover{background:#2fd4b8;transform:translateY(-1px);}
+  .btn-ghost{border-color:rgba(255,255,255,.35);color:#e8eefb;}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+  .hero-art{
+    position:relative;display:flex;justify-content:center;align-items:center;
+  }
+  .hero-art .frame{
+    width:100%;max-width:330px;border-radius:22px;overflow:hidden;
+    border:1px solid rgba(255,255,255,.16);
+    background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.02));
+    padding:14px;
+  }
+  .hero-stats{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap;}
+  .hero-stats div{font-size:13px;color:#a9b6d0;}
+  .hero-stats strong{display:block;font-size:20px;color:#fff;font-weight:800;}
+
+  /* Sections */
+  section{padding:56px 0;}
+  .sec-head{display:flex;align-items:flex-end;gap:16px;margin-bottom:26px;flex-wrap:wrap;}
+  .sec-head h2{
+    font-size:clamp(20px,2.6vw,26px);margin:0;font-weight:800;letter-spacing:.3px;
+  }
+  .sec-head .sub{font-size:14px;color:var(--muted);margin:0 0 2px;}
+  .sec-head .line{flex:1;height:1px;background:var(--line);min-width:30px;margin-bottom:9px;}
+
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;transition:.2s;
+  }
+  .card:hover{box-shadow:0 12px 30px -18px rgba(14,21,34,.4);transform:translateY(-2px);}
+  .card .icon{
+    width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+    background:rgba(18,179,154,.12);margin-bottom:14px;
+  }
+  .card h3{margin:0 0 8px;font-size:16.5px;font-weight:800;}
+  .card p{margin:0;font-size:14px;color:var(--muted);}
+
+  /* Catalog */
+  #catalog{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .toolbar{
+    display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+    background:var(--paper);border:1px solid var(--line);border-radius:14px;
+    padding:12px 14px;margin-bottom:24px;
+  }
+  .toolbar .label{font-size:13.5px;color:var(--muted);font-weight:700;}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;}
+  .chip{
+    font-size:13.5px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);
+    background:#fff;color:var(--ink-2);cursor:pointer;transition:.16s;font-family:inherit;
+  }
+  .chip:hover{border-color:var(--teal);color:var(--teal);}
+  .chip.active{background:var(--ink);border-color:var(--ink);color:#fff;}
+  .searchbox{
+    margin-left:auto;display:flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 8px 6px 14px;
+  }
+  .searchbox input{
+    border:0;outline:0;font-size:14px;font-family:inherit;width:170px;background:transparent;color:var(--ink);
+  }
+  .searchbox button{
+    border:0;background:var(--teal);color:#04231e;font-weight:800;font-size:13.5px;
+    padding:7px 15px;border-radius:999px;cursor:pointer;font-family:inherit;
+  }
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .item{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;display:flex;flex-direction:column;transition:.2s;
+  }
+  .item:hover{box-shadow:0 14px 32px -20px rgba(14,21,34,.45);transform:translateY(-2px);}
+  .thumb{height:132px;position:relative;overflow:hidden;}
+  .thumb svg{width:100%;height:100%;}
+  .tag{
+    position:absolute;top:10px;left:10px;font-size:11.5px;font-weight:800;
+    background:rgba(14,21,34,.78);color:#fff;padding:3px 9px;border-radius:999px;letter-spacing:.5px;
+  }
+  .item-body{padding:15px 17px 18px;display:flex;flex-direction:column;gap:7px;flex:1;}
+  .item-body h3{margin:0;font-size:15.5px;font-weight:800;}
+  .item-body p{margin:0;font-size:13.5px;color:var(--muted);flex:1;}
+  .item-meta{display:flex;justify-content:space-between;font-size:12.5px;color:#8a96ad;border-top:1px dashed var(--line);padding-top:10px;margin-top:4px;}
+  .empty{
+    grid-column:1/-1;text-align:center;color:var(--muted);font-size:14.5px;
+    padding:36px 10px;background:#fff;border:1px dashed var(--line);border-radius:var(--radius);
+  }
+
+  /* Featured list */
+  .feature{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;align-items:start;}
+  .rank{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+  .rank li{
+    list-style:none;display:flex;gap:14px;align-items:center;
+    padding:14px 18px;border-bottom:1px solid var(--line);font-size:14.5px;
+  }
+  .rank li:last-child{border-bottom:0;}
+  .rank ol{margin:0;padding:0;}
+  .rank .no{
+    font-weight:900;font-size:15px;color:var(--violet);width:24px;flex:none;font-style:italic;
+  }
+  .rank .t{flex:1;font-weight:700;}
+  .rank .m{font-size:12.5px;color:#8a96ad;}
+  .prose h2{font-size:22px;margin:0 0 14px;font-weight:800;}
+  .prose p{margin:0 0 14px;font-size:15px;color:#39445c;}
+  .prose ul{margin:0 0 14px;padding-left:20px;font-size:14.5px;color:#39445c;}
+  .prose li{margin-bottom:6px;}
+
+  /* Steps */
+  #how{background:var(--ink-2);color:#eef2fa;}
+  #how .sec-head h2{color:#fff;}
+  #how .sec-head .sub{color:#a9b6d0;}
+  #how .sec-head .line{background:rgba(255,255,255,.14);}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s;}
+  .step{
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+    border-radius:var(--radius);padding:22px;
+  }
+  .step .n{
+    width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+    background:var(--coral);color:#2a0810;font-weight:900;margin-bottom:14px;
+  }
+  .step h3{margin:0 0 8px;font-size:16px;font-weight:800;}
+  .step p{margin:0;font-size:14px;color:#b9c4da;}
+
+  /* FAQ */
+  .faq{display:grid;gap:12px;}
+  details{
+    background:#fff;border:1px solid var(--line);border-radius:12px;padding:0 18px;
+  }
+  details[open]{border-color:#c8d3e8;}
+  summary{
+    cursor:pointer;padding:16px 0;font-weight:800;font-size:15px;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";color:var(--teal);font-size:20px;font-weight:800;line-height:1;}
+  details[open] summary::after{content:"–";}
+  details p{margin:0 0 16px;font-size:14.5px;color:var(--muted);}
+
+  /* Download */
+  .dl{
+    display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+    background:linear-gradient(120deg,rgba(106,92,255,.1),rgba(18,179,154,.1));
+    border:1px solid var(--line);border-radius:var(--radius);padding:26px;
+  }
+  .dl .txt{flex:1;min-width:240px;}
+  .dl h3{margin:0 0 6px;font-size:18px;font-weight:800;}
+  .dl p{margin:0;font-size:14px;color:var(--muted);}
+  .btn-disabled{
+    background:var(--ink);color:#fff;opacity:.6;cursor:not-allowed;
+  }
+
+  /* Footer */
+  footer.site{
+    background:var(--ink);color:#9fadc7;padding:40px 0 28px;font-size:13.5px;
+  }
+  footer .fgrid{display:flex;gap:28px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;}
+  footer .brand{color:#fff;font-weight:800;font-size:15px;margin-bottom:8px;}
+  footer p{margin:0 0 6px;max-width:520px;}
+  footer nav{display:flex;gap:16px;flex-wrap:wrap;}
+  footer nav a:hover{color:#fff;}
+  footer .copy{border-top:1px solid rgba(255,255,255,.1);margin-top:24px;padding-top:18px;font-size:12.5px;color:#7c8aa6;}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:28px;}
+    .hero-art{order:-1;max-width:280px;margin:0 auto;}
+    .grid-3,.cards,.steps{grid-template-columns:1fr 1fr;}
+    .feature{grid-template-columns:1fr;}
+  }
+  @media (max-width:640px){
+    .bar{min-height:auto;padding:12px 0;gap:10px;}
+    nav.main{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;}
+    nav.main a{white-space:nowrap;}
+    .grid-3,.cards,.steps{grid-template-columns:1fr;}
+    .searchbox{margin-left:0;width:100%;}
+    .searchbox input{width:100%;flex:1;}
+    section{padding:40px 0;}
+    .hero{padding:36px 0 42px;}
+    h1{font-size:26px;}
+    .hero-stats{gap:16px;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <div class="logo">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1b2a46"/>
+        <circle cx="32" cy="32" r="16" fill="none" stroke="#7ff0d9" stroke-width="4"/>
+        <path d="M27 23l15 9-15 9z" fill="#ff6b7d"/>
+      </svg>
+      <span>91次元免费在线观看</span>
+    </div>
+    <nav class="main" aria-label="主导航">
+      <a href="#catalog">番剧目录</a>
+      <a href="#featured">热度榜</a>
+      <a href="#how">观看方式</a>
+      <a href="#faq">常见问题</a>
+      <a href="#download">客户端</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">次元番剧 · 免费观看入口</span>
+        <h1>91次元免费在线观看</h1>
+        <p class="lead">一个围绕次元动漫与番剧的观看入口页：按题材与更新节奏分区陈列，点开即可进入对应内容页。以下先说明这里能看什么、怎么找，再给出可直接使用的目录与筛选。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalog">进入番剧目录</a>
+          <a class="btn btn-ghost" href="#how">了解观看方式</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>6 类</strong>题材分区</div>
+          <div><strong>每日</strong>更新提示</div>
+          <div><strong>免登录</strong>浏览目录</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="frame">
+          <svg viewBox="0 0 300 230" role="img" aria-label="次元番剧视觉插画">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#6a5cff"/><stop offset="1" stop-color="#12b39a"/>
+              </linearGradient>
+            </defs>
+            <rect x="10" y="18" width="280" height="150" rx="14" fill="url(#g1)" opacity=".35"/>
+            <rect x="26" y="34" width="248" height="118" rx="10" fill="#0d1524" stroke="#7ff0d9" stroke-width="1.5" stroke-opacity=".5"/>
+            <path d="M132 74l44 20-44 20z" fill="#ff6b7d"/>
+            <circle cx="248" cy="52" r="7" fill="#7ff0d9"/>
+            <rect x="44" y="164" width="150" height="9" rx="4.5" fill="#ffffff" opacity=".22"/>
+            <rect x="44" y="184" width="96" height="9" rx="4.5" fill="#ffffff" opacity=".14"/>
+            <circle cx="246" cy="178" r="13" fill="none" stroke="#7ff0d9" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="intro">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>这个页面解决什么问题</h2>
+        <p class="sub">先看清定位，再决定从哪进入</p>
+        <span class="line"></span>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12b39a" stroke-width="2" stroke-linecap="round">
+              <rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="M10 9l5 3-5 3z" fill="#12b39a" stroke="none"/>
+            </svg>
+          </div>
+          <h3>观看入口集中</h3>
+          <p>91次元免费在线观看把分散的番剧入口收拢到一页，按题材分组，减少在多个页面之间来回跳转的麻烦。</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6a5cff" stroke-width="2" stroke-linecap="round">
+              <circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/>
+            </svg>
+          </div>
+          <h3>检索与筛选</h3>
+          <p>页面内置题材筛选与关键词搜索，输入片名片段即可缩小范围，结果直接在当前页呈现，不跳转到空白页。</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff6b7d" stroke-width="2" stroke-linecap="round">
+              <path d="M12 3v18"/><path d="M5 8l7-4 7 4"/><path d="M4 16h16"/>
+            </svg>
+          </div>
+          <h3>更新节奏清晰</h3>
+          <p>每个条目标注更新状态与集数进度，方便判断是否追更，也便于把想看的番剧按顺序排进自己的观看清单。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>番剧目录</h2>
+        <p class="sub">按题材浏览，或直接搜索片名</p>
+        <span class="line"></span>
+      </div>
+
+      <div class="toolbar">
+        <span class="label">题材</span>
+        <div class="chips" id="chips" role="group" aria-label="题材筛选">
+          <button class="chip active" data-cat="all">全部</button>
+          <button class="chip" data-cat="热血">热血</button>
+          <button class="chip" data-cat="奇幻">奇幻</button>
+          <button class="chip" data-cat="日常">日常</button>
+          <button class="chip" data-cat="科幻">科幻</button>
+          <button class="chip" data-cat="悬疑">悬疑</button>
+        </div>
+        <div class="searchbox">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8a96ad" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/>
+          </svg>
+          <input id="q" type="search" placeholder="搜索片名或关键词" aria-label="搜索片名">
+          <button type="button" id="go">搜索</button>
+        </div>
+      </div>
+
+      <div class="cards" id="cards" aria-live="polite">
+        <article class="item" data-cat="热血" data-name="星轨少年 第一季">
+          <div class="thumb">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="200" fill="#1b2a46"/>
+              <circle cx="320" cy="48" r="46" fill="#ff6b7d" opacity=".55"/>
+              <path d="M0 200 L120 90 L210 200 Z" fill="#6a5cff" opacity=".5"/>
+              <path d="M160 200 L260 110 L400 200 Z" fill="#12b39a" opacity=".45"/>
+            </svg>
+            <span class="tag">连载中</span>
+          </div>
+          <div class="item-body">
+            <h3>星轨少年 第一季</h3>
+            <p>少年在废弃观测站遇见会说话的光点，从此踏上追回星轨的旅程。热血成长线清晰，适合连续追看。</p>
+            <div class="item-meta"><span>更新至 12 集</span><span>热血 · 冒险</span></div>
+          </div>
+        </article>
+
+        <article class="item" data-cat="奇幻" data-name="雾海旅店">
+          <div class="thumb">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="200" fill="#16233a"/>
+              <path d="M0 140 Q100 90 200 140 T400 140 V200 H0 Z" fill="#12b39a" opacity=".45"/>
+              <rect x="150" y="60" width="100" height="90" rx="6" fill="#f6f7fb" opacity=".85"/>
+              <rect x="176" y="96" width="20" height="24" fill="#ff6b7d"/>
+              <rect x="206" y="96" width="20" height="24" fill="#ff6b7d"/>
+            </svg>
+            <span class="tag">连载中</span>
+          </div>
+          <div class="item-body">
+            <h3>雾海旅店</h3>
+            <p>建在雾海边缘的旅店每晚迎来不同客人，每段入住都藏着一则小故事。奇幻设定温和，节奏舒缓。</p>
+            <div class="item-meta"><span>更新至 8 集</span><span>奇幻 · 治愈</span></div>
+          </div>
+        </article>
+
+        <article class="item" data-cat="日常" data-name="午后三点的社团">
+          <div class="thumb">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="200" fill="#f2e7d5"/>
+              <circle cx="90" cy="60" r="34" fill="#ffb347" opacity=".8"/>
+              <rect x="150" y="70" width="170" height="90" rx="8" fill="#ffffff" opacity=".9"/>
+              <rect x="172" y="92" width="58" height="46" rx="4" fill="#6a5cff" opacity=".5"/>
+              <rect x="244" y="92" width="58" height="46" rx="4" fill="#12b39a" opacity=".5"/>
+            </svg>
+            <span class="tag">已完结</span>
+          </div>
+          <div class="item-body">
+            <h3>午后三点的社团</h3>
+            <p>放学后占着旧教室的四个人，把无所事事过成了正经事。日常群像轻喜剧，适合吃饭时单集观看。</p>
+            <div class="item-meta"><span>全 13 集</span><span>日常 · 校园</span></div>
+          </div>
+        </article>
+
+        <article class="item" data-cat="科幻" data-name="第七号观测者">
+          <div class="thumb">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="200" fill="#0d1524"/>
+              <circle cx="200" cy="100" r="56" fill="none" stroke="#7ff0d9" stroke-width="2"/>
+              <circle cx="200" cy="100" r="26" fill="#6a5cff" opacity=".7"/>
+              <path d="M0 170 H400" stroke="#7ff0d9" stroke-opacity=".4" stroke-width="2"/>
+              <circle cx="330" cy="46" r="6" fill="#ff6b7d"/>
+            </svg>
+            <span class="tag">连载中</span>
+          </div>
+          <div class="item-body">
+            <h3>第七号观测者</h3>
+            <p>在轨道站值班的观测者发现数据里多出一个不该存在的编号。科幻悬疑线，信息密度较高。</p>
+            <div class="item-meta"><span>更新至 6 集</span><span>科幻 · 悬疑</span></div>
+          </div>
+        </article>
+
+        <article class="item" data-cat="悬疑" data-name="旧钟楼的回声">
+          <div class="thumb">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="200" fill="#1a1526"/>
+              <rect x="160" y="40" width="80" height="140" fill="#2b2340"/>
+              <circle cx="200" cy="82" r="22" fill="none" stroke="#ff6b7d" stroke-width="3"/>
+              <path d="M200 82 L200 68 M200 82 L212 88" stroke="#ff6b7d" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <span class="tag">连载中</span>
+          </div>
+          <div class="item-body">
+            <h3>旧钟楼的回声</h3>
+            <p>镇上的钟楼每逢整点响十三下，只有一个人听得见。悬疑推理，每集收束一条线索。</p>
+            <div class="item-meta"><span>更新至 10 集</span><span>悬疑 · 推理</span></div>
+          </div>
+        </article>
+
+        <article class="item" data-cat="热血" data-name="长风竞技场">
+          <div class="thumb">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="200" fill="#221a2e"/>
+              <path d="M60 200 L200 40 L340 200 Z" fill="#6a5cff" opacity=".45"/>
+              <path d="M130 200 L200 96 L270 200 Z" fill="#ff6b7d" opacity=".6"/>
+              <circle cx="200" cy="52" r="12" fill="#7ff0d9"/>
+            </svg>
+            <span class="tag">连载中</span>
+          </div>
+          <div class="item-body">
+            <h3>长风竞技场</h3>
+            <p>主角带着一柄旧剑进入竞技场，从垫底一路挑战上位。热血对决为主，每集推进一场核心对战。</p>
+            <div class="item-meta"><span>更新至 9 集</span><span>热血 · 竞技</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="empty" id="empty" hidden>没有找到匹配的条目，换个关键词或切回“全部”题材再试。</p>
+    </div>
+  </section>
+
+  <section id="featured">
+    <div class="wrap feature">
+      <div>
+        <div class="sec-head">
+          <h2>本周热度</h2>
+          <span class="line"></span>
+        </div>
+        <div class="rank">
+          <ol>
+            <li><span class="no">1</span><span class="t">星轨少年 第一季</span><span class="m">热血</span></li>
+            <li><span class="no">2</span><span class="t">第七号观测者</span><span class="m">科幻</span></li>
+            <li><span class="no">3</span><span class="t">旧钟楼的回声</span><span class="m">悬疑</span></li>
+            <li><span class="no">4</span><span class="t">长风竞技场</span><span class="m">热血</span></li>
+            <li><span class="no">5</span><span class="t">雾海旅店</span><span class="m">奇幻</span></li>
+          </ol>
+        </div>
+      </div>
+      <div class="prose">
+        <h2>为什么先看热度榜</h2>
+        <p>第一次进入 91次元免费在线观看 的访问者，往往不确定从哪部开始。热度榜按站内点击与收藏的排列顺序整理，能看到近期被频繁打开的条目，适合作为试看的第一站。</p>
+        <p>榜单不是评分，也不代表质量高低，它的作用只是缩短选择时间。点开一集确认画风与叙事节奏后，再回到目录按题材筛选，通常比在目录里反复滑动更省力。</p>
+        <ul>
+          <li>想快速入戏：优先看榜前两部，节奏偏快。</li>
+          <li>想放松观看：选《雾海旅店》这类单元故事。</li>
+          <li>想跟着线索走：悬疑条目适合一次连看数集。</li>
+        </ul>
+        <p>目录、热度榜与筛选工具共同构成 91次元免费在线观看 的浏览路径，三者互相补充，不必按固定顺序使用。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>观看方式</h2>
+        <p class="sub">三步完成从浏览到播放</p>
+        <span class="line"></span>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <h3>选定题材或搜索</h3>
+          <p>在上方目录用题材按钮缩小范围，或输入片名片段直接检索。搜索结果会实时过滤，不需要刷新页面。</p>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <h3>核对更新进度</h3>
+          <p>条目底部标注更新集数与状态，连载中的番剧按周追加，已完结的可一次排进观看计划。</p>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <h3>进入内容页观看</h3>
+          <p>点击条目进入对应内容页播放。建议在稳定网络下观看，移动端横屏体验更接近番剧原始画幅。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+        <p class="sub">关于浏览与观看的说明</p>
+        <span class="line"></span>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>91次元免费在线观看需要注册账号吗？</summary>
+          <p>浏览目录、使用题材筛选与站内搜索都不需要注册。是否需要在内容页登录，以该页面当时的提示为准，本页不对其他页面的规则作出承诺。</p>
+        </details>
+        <details>
+          <summary>目录里的条目会多久更新一次？</summary>
+          <p>连载中的番剧按原定播出节奏追加集数，目录中的“更新至”数字会随内容页同步调整。具体时间点取决于片源方，页面只反映当前可查到的进度。</p>
+        </details>
+        <details>
+          <summary>搜索不到想看的番剧怎么办？</summary>
+          <p>先用片名的两到三个字尝试，例如只输入“星轨”或“钟楼”。若仍无结果，说明该条目尚未收录，可以改用题材筛选浏览相近类型。</p>
+        </details>
+        <details>
+          <summary>手机上观看有什么建议？</summary>
+          <p>移动端首屏会优先展示标题与目录入口，建议先筛选再点开，减少流量消耗。播放时横屏可获得更完整的画面比例，音量与亮度按环境自行调整。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="wrap">
+      <div class="dl">
+        <div class="txt">
+          <h3>桌面客户端（筹备中）</h3>
+          <p>面向长时间追番的用户，客户端将提供目录同步与播放记录。当前版本尚未发布，发布后此处会替换为正式下载地址。</p>
+        </div>
+        <a class="btn btn-disabled" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="pointer-events:none;">下载</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand">91次元免费在线观看</div>
+        <p>次元动漫与番剧的观看入口页，按题材分区陈列，提供筛选、搜索与更新进度提示，帮助访问者更快找到想看的条目。</p>
+      </div>
+      <nav aria-label="页尾导航">
+        <a href="#catalog">番剧目录</a>
+        <a href="#featured">热度榜</a>
+        <a href="#how">观看方式</a>
+        <a href="#faq">常见问题</a>
+        <a href="#download">客户端</a>
+      </nav>
+    </div>
+    <div class="copy">
+      <p>本站为 91次元免费在线观看 主题首页，内容以目录与说明为主。番剧信息与更新进度以对应内容页显示为准。</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var chips = document.querySelectorAll('#chips .chip');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .item'));
+  var q = document.getElementById('q');
+  var go = document.getElementById('go');
+  var empty = document.getElementById('empty');
+  var cat = 'all';
+
+  function apply(){
+    var kw = (q.value || '').trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function(c){
+      var okCat = (cat === 'all') || (c.getAttribute('data-cat') === cat);
+      var name = (c.getAttribute('data-name') || '').toLowerCase();
+      var text = c.textContent.toLowerCase();
+      var okKw = !kw || name.indexOf(kw) > -1 || text.indexOf(kw) > -1;
+      var show = okCat && okKw;
+      c.style.display = show ? '' : 'none';
+      if(show) shown++;
+    });
+    empty.hidden = shown > 0;
+  }
+
+  chips.forEach(function(b){
+    b.addEventListener('click', function(){
+      chips.forEach(function(x){ x.classList.remove('active'); });
+      b.classList.add('active');
+      cat = b.getAttribute('data-cat');
+      apply();
+    });
+  });
+
+  go.addEventListener('click', apply);
+  q.addEventListener('input', apply);
+  q.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); apply(); } });
+})();
+</script>
+</body>
+  </html>
